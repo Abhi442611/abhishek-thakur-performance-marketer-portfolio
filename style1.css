@@ -2108,3 +2108,12 @@ footer{text-align:center;padding:2rem;color:var(--text-muted);font-size:.85rem;b
   font-size: 1.25rem;  /* fixed readable size */
   white-space: normal;
 }
+@media (max-width: 768px) {
+  [class*="pill"] *, [class*="service"] * {
+    font-size: 18px !important;
+    min-width: 0 !important;
+    width: auto !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
