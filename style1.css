@@ -1824,4 +1824,183 @@ footer{text-align:center;padding:2rem;color:var(--text-muted);font-size:.85rem;b
   #skills #skillDetails .skill-detail-card {
     padding: 18px;
   }
+/* ==========================================
+   MOBILE RESPONSIVE FIX — PORTFOLIO
+   Desktop styles remain unchanged
+========================================== */
+@media screen and (max-width: 767px) {
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  /* Prevent horizontal overflow */
+  .navbar,
+  #home,
+  .hero,
+  .hero-section {
+    max-width: 100%;
+  }
+
+  /* Navbar */
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 12px;
+  }
+
+  .navbar nav {
+    max-width: calc(100vw - 85px);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .navbar nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .navbar nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    gap: 20px;
+  }
+
+  /* Hero section full mobile width */
+  #home,
+  .hero,
+  .hero-section {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 38px 22px 0;
+    gap: 30px;
+  }
+
+  .hero-left {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    text-align: center;
+  }
+
+  .hero-left h1 {
+    font-size: clamp(34px, 9vw, 46px);
+    line-height: 1.12;
+    overflow-wrap: break-word;
+  }
+
+  .hero-left h2 {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .hero-left p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  /* Buttons */
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .hero-buttons .btn,
+  .hero-buttons a,
+  .hero-buttons button {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: center;
+  }
+
+  /* Profile image */
+  .hero-right {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .hero-image {
+    width: min(82vw, 350px);
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .hero-right img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* Avoid oversized decorative circles */
+  .hero-right,
+  .hero-image {
+    flex-shrink: 1;
+  }
+
+  /* Keep all sections within the screen */
+  img,
+  video,
+  iframe {
+    max-width: 100%;
+  }
+}
+
+/* Smaller phones */
+@media screen and (max-width: 380px) {
+
+  .hero-content {
+    padding: 30px 16px 0;
+    gap: 24px;
+  }
+
+  .hero-left h1 {
+    font-size: 33px;
+  }
+
+  .hero-left h2 {
+    font-size: 14px;
+  }
+
+  .navbar nav ul {
+    gap: 14px;
+  }
+}
 }
