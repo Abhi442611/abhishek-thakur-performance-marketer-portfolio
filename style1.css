@@ -543,6 +543,24 @@ background:radial-gradient(ellipse 65% 90% at 85% 50%,rgba(48,30,160,.22) 0%,tra
     font-size: 21px;
   }
 }
+/* Remove About Section background only */
+.about-v2 {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Keep the cards and their gradient borders */
+.about-v2-card {
+  background:
+    linear-gradient(135deg, #101735, #07152b 85%)
+      padding-box,
+    linear-gradient(
+      125deg,
+      rgba(151, 94, 255, 0.9),
+      rgba(66, 92, 220, 0.35),
+      rgba(0, 220, 255, 0.8)
+    ) border-box !important;
+}
 
 /* Respect reduced-motion settings */
 
