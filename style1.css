@@ -574,15 +574,8 @@ background:radial-gradient(ellipse 65% 90% at 85% 50%,rgba(48,30,160,.22) 0%,tra
 .skills-grid{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center}
 .skill-card{background:var(--bg-card);border:1px solid var(--border);color:var(--text-secondary);font-size:.9rem;font-weight:600;padding:.6rem 1.4rem;border-radius:100px;transition:var(--transition);cursor:default}
 .skill-card:hover{background:var(--grad-card);border-color:var(--accent-1);color:var(--text-primary);transform:translateY(-2px);box-shadow:0 8px 24px rgba(124,58,237,.2)}
-/* Remove Skills section background */
-#skills,
-.skills-section,
-.skills-container,
-.skills-wrapper {
-  background: transparent !important;
-  background-color: transparent !important;
-  background-image: none !important;
 }
+
 /* TIMELINE */
 .timeline{position:relative;max-width:700px;margin:0 auto}
 .timeline::before{content:'';position:absolute;left:20px;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--accent-1),var(--accent-2));opacity:.4}
@@ -2123,6 +2116,15 @@ footer{text-align:center;padding:2rem;color:var(--text-muted);font-size:.85rem;b
     transition: none !important;
   }
 }
+
+/* Remove Skills section background */
+#skills,
+.skills-section,
+.skills-container,
+.skills-wrapper {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
 
 /* =========================================
    SKILLS DETAIL PANEL — LAYOUT FIX
